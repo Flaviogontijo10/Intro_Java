@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dd0d5f2-0ce9-401e-8179-9cc30be5d0cd" name="Changes" comment="Primeiro exemplo java">
+    <list default="true" id="0dd0d5f2-0ce9-401e-8179-9cc30be5d0cd" name="Changes" comment="Alterei o método main para static e  chamar os métodos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/intro/Medidas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/intro/Medidas.java" afterDir="false" />
     </list>
@@ -41,6 +41,9 @@
         <option name="url" value="https://github.com/Flaviogontijo10/Intro_Java.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/intro/Medidas.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -102,13 +105,22 @@
       <option name="project" value="LOCAL" />
       <updated>1695732323945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Alterei o método main para static e  chamar os métodos">
+      <option name="closed" value="true" />
+      <created>1695734093881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695734093881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Primeiro exemplo java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeiro exemplo java" />
+    <MESSAGE value="Alterei o método main para static e  chamar os métodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterei o método main para static e  chamar os métodos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -117,6 +129,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/intro/Medidas.java</url>
+          <line>12</line>
+          <properties class="intro.Medidas" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
