@@ -8,19 +8,21 @@ import java.util.Scanner;
 // 3 - Classe
 public class Medidas {
     // 3.1 - Atributos - Caracterísicas
+    static Scanner scanner = new Scanner(System.in);
 
     // 3.2 - Métodos e Funções
     public static void main(String[] args) {
 
         // Condicional = verificar uma condição
         // Utilizar a classe Sacnner do Java para ler a escolha do usuário no console
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("M E N U  D E  O P Ç Õ E S");
         System.out.println("c - Calcular Area Modo Compacto");
         System.out.println("d - Contagem até 10");
         System.out.println("e - Calcular Area Modo Exenso");
         System.out.println("i - IFSimples");
         System.out.println("r - Contagem regressiva");
+        System.out.println("z - Divisão por Zero");
         System.out.println("Digite a opção desejada: ");
         String opcao = scanner.next();
 
@@ -51,6 +53,11 @@ public class Medidas {
             case "R":
                 System.out.println("Você escolheu o método contagemRegressiva");
                 contagemRegressiva();
+                break;
+            case "z":
+            case "Z":
+                System.out.println("Você escolheu o método divisaoPorZero");
+                divisaoPorZero();
                 break;
             default:
                 System.out.println("Você escolheu outro valor que não tem valor associaddo");
@@ -100,11 +107,24 @@ public class Medidas {
             System.out.println(numero);
         }
     }
-    public static void contagemRegressiva(){
+
+    public static void contagemRegressiva() {
         System.out.println("Contagem Regressiva");
-        for(int numero= 10; numero >=0; numero--){
+        for (int numero = 10; numero >= 0; numero--) {
             System.out.println(numero);
         }
     }
 
+    public static void divisaoPorZero() {
+        System.out.println("Qual é  o dividendo? (Número a ser dividido ");
+        int dividendo = scanner.nextInt();
+        System.out.println("Qual é o divisor? (Número que divide o dividendo");
+        int divisor = scanner.nextInt();
+        try {
+            System.out.println(" O resultado é : " + dividendo / divisor);
+        } catch (Exception e) {
+            ;
+            System.out.println("Não é possível dividr por zero");
+        }
+    }
 }
